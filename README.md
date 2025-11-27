@@ -21,5 +21,19 @@ It performs:
 - Upload compiled binary as an artifact
 
 ---
+# SUMMARY: HOW GITHUB ACTIONS WORK
+  1) You push code → GitHub detects it
+  2) GitHub Actions starts a workflow run
+  3) It creates a fresh Linux VM
+  4) It executes each step:
+    ✔ Pull repo
+    ✔ Install tools
+    ✔ CMake configure
+    ✔ Build
+    ✔ Test
+    ✔ Static analysis
+    ✔ Save artifacts
+
+  5) Shows results in GitHub Action UI
 
 
